@@ -1,4 +1,4 @@
-# Telegram 数据采集器 (DTG)
+# Telegram 下载器
 
 一个专门用于从 Telegram 群组/频道/聊天中采集消息、图片和视频的工具。
 
@@ -27,7 +27,7 @@ ddtg/
 ## 安装与配置
 
 ### 1. 前置要求
-- Python 3.8+
+- Python 3.10+
 - Telegram API ID 和 Hash (获取地址: https://my.telegram.org)
 
 ### 2. 安装依赖
@@ -52,9 +52,9 @@ download_settings:
 proxy:
   enable: false                # 是否启用代理 (true/false)
   type: "socks5"               # 代理类型: "socks5" 或 "http"
-  address: "127.0.0.1:7890"    # 代理地址
-  user: ""                     # 代理用户名 (如果有)
-  password: ""                 # 代理密码 (如果有)
+  address: "127.0.0.1:7890"    # 代理地址:端口
+  user: ""                     # 代理用户名
+  password: ""                 # 代理密码
 
 fetch_settings:
   start_type: "earliest"       # 采集起始点: "earliest" (最早), "date" (日期), "message_id" (消息ID)
