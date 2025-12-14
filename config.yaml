@@ -1,0 +1,30 @@
+app_id: 343xxxx
+app_hash: "1ae10e94c5bea4xxxxxxxx"
+phone_number: "+5730xxxxxxx"
+
+download_settings:
+  max_concurrent_downloads: 5
+  download_path: "./output/downloads"
+  rate_limit_ms: 200 # Delay between requests to avoid flood wait
+
+proxy:
+  enable: false
+  # Supported types: "socks5", "http"
+  type: "a"
+  address: "ultrxxxxxies.com:44445"
+  user: "mxxxxxCuJD"
+  password: "MDmNxxxxxx_lifetime-24h"
+
+fetch_settings:
+  # Options: "earliest" (all history), "date", "message_id"
+  start_type: "earliest"
+  # Format: "2023-01-01T00:00:00Z" (Used if start_type is "date")
+  start_date: "2025-12-13T00:00:00Z"
+  # Integer ID (Used if start_type is "message_id")
+  start_message_id: 0
+  # Target chat username, phone number, or "me" (e.g., "https://t.me/durov", "@durov", "durov")
+  target_chat: "me"
+
+export_settings:
+  format: "html"
+  output_file: "./output/messages.html"
