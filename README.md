@@ -1,7 +1,7 @@
 # Telegram 下载器
 
 一个专门用于从 Telegram 群组/频道/聊天中采集消息、图片和视频的工具。
-
+![](https://fastly.jsdelivr.net/gh/bucketio/img1@main/2025/12/15/1765769189226-706ccb5c-f6ae-4df7-8563-e47c8624d051.jpg)
 ## 功能特性
 - **账号登录**: 使用您的个人 Telegram 账号登录。
 - **交互式选择**: 命令行交互选择要抓取的对话。
