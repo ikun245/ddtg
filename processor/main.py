@@ -14,6 +14,18 @@ def load_config():
     with open('../config.yaml', 'r', encoding='utf-8') as f:
         return yaml.safe_load(f)
 
+def print_banner():
+    print(r"""
+  ____                      _                 _ _____ ____ 
+ |  _ \  _____      ___ __ | | ___   __ _  __| |_   _/ ___|
+ | | | |/ _ \ \ /\ / / '_ \| |/ _ \ / _` |/ _` | | || |  _ 
+ | |_| | (_) \ V  V /| | | | | (_) | (_| | (_| | | || |_| |
+ |____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_| |_| \____|
+                   
+ DownloadTG
+ Author: @ikun245
+    """)
+
 config = load_config()
 
 # Proxy Setup
@@ -241,5 +253,6 @@ async def main():
     print("\nDone!")
 
 if __name__ == '__main__':
+    print_banner()
     with client:
         client.loop.run_until_complete(main())
